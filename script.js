@@ -39,6 +39,10 @@ function playTrack(trackItem) {
       });
 
       playButton.innerHTML = '<i class="fa-solid fa-pause fa-xl" style="color: #4B2F94;"></i>';
+
+      document.addEventListener('click', () => {
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      });
     },
   });
 
